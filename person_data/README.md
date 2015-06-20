@@ -54,3 +54,17 @@ O'Donnell
 
 * Find: `^(O)don(\w+)`
 * Replace: `$1'Don\L$2`
+
+## Culling Data
+
+Per the analysis shown on the Wiki, here's the breakdown of the current English person provider:
+
+* Female names - 3932
+* Male names - 3272
+* Last Names - 474
+
+So, I am going to utilize all the names with the census data as follows:
+
+* Female names - 1219
+* Male names - 4275
+* Last Names - 1000
