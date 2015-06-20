@@ -68,3 +68,7 @@ So, I am going to utilize all the names with the census data as follows:
 * Female names - 1219
 * Male names - 4275
 * Last Names - 1000
+
+## Format Lines 2 - N
+* Find: `^('\w+', )\R('\w+', )\R('\w+', )\R('\w+', )\R('\w+', )\R('\w+', )\R('\w+', )\R`
+* Replace: `        $1$2$3$4$5$6$7\n` (that's 8 spaces)
