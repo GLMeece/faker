@@ -4,14 +4,20 @@ This is the raw data from the census bureau.
 
 Also, here's [a link to the Google Sheets document for the Excel file](https://docs.google.com/spreadsheets/d/1NKtcz7-bDs0b8OyygSwJgVmwQSogtrLfswWDc8GV_Kg/edit?usp=sharing).
 
+Note I am going to be operating on the file named `census_2000_last-1000_names_Titlecase.txt` which limits my edge cases quite a bit.
+
 ## RegEx Conversion
+
+### Initial Search & Replace
+
+#### Just Names
 
 To strip out everything after the name, use the following RegEx:
 
 * Find: `^(\w+)\s*\d.*`
 * Replace: `$1`
 
-Note I am going to be operating on the file named `census_2000_last-1000_names_Titlecase.txt` which limits my edge cases quite a bit.
+#### Title case
 
 To convert name data such that the first letter is capitalized and the rest of the name is lower-cased:
 
